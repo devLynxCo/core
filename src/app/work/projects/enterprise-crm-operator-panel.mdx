@@ -1,0 +1,42 @@
+---
+title: "Enterprise CRM & Operator Panel"
+publishedAt: "2024-04-01"
+summary: "Built advanced operator/admin panels designed for fast support workflows and real-time CRM data synchronization."
+images:
+  - "/images/projects/project-01/cover-02.jpg"
+  - "/images/projects/project-01/image-03.jpg"
+team:
+  - name: "Mehran Mahdavi"
+    role: "Lead Frontend Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/mehran-mahdavi"
+link: "#"
+---
+
+## Overview
+
+In this project at LicenseMarket, the goal was to build a large-scale CRM and highly advanced operator/admin panels that helped support teams resolve user issues quickly and efficiently. Operators were able to resolve user problems with just a few clicks during incoming calls, significantly improving the customer experience.
+
+## Key Features
+
+- **Real-Time Data Synchronization**: Implemented real-time updates via WebSockets so that operators always had the most current user context during live calls.
+- **Fast Support Workflows**: Designed and built specialized UI panels prioritizing speed, allowing operators to diagnose and fix issues without navigating away from the main dashboard.
+- **Micro-Frontend Migration**: Led the migration from a legacy Vue.js application to a modern React Micro-Frontend architecture.
+- **Nx Monorepo Architecture**: Introduced an Nx Monorepo to improve build times, share core libraries, and streamline code sharing across multiple teams.
+
+## Technologies Used
+
+- **React & TypeScript**: For building robust, type-safe interfaces.
+- **Micro-Frontends**: To decouple large features and allow separate teams to deploy independently.
+- **Nx Monorepo**: For scalable project organization and faster CI/CD pipelines.
+- **WebSockets**: To maintain real-time bidirectional communication between the client and server.
+
+## Challenges and Learnings
+
+A major challenge was managing state and performance across different micro-frontend boundaries while ensuring the operator panel remained lightning-fast during live calls. We resolved this by optimizing the payload size and establishing clear communication channels between frontend and backend APIs.
+
+## Outcome
+
+The new operator panel and CRM drastically reduced average call handling time. The shift to a React-based Micro-Frontend architecture with an Nx Monorepo improved team development velocity, established a strong technical direction, and facilitated the adoption of standard frontend best practices.
+
+---

@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Mehran",
   lastName: "Mahdavi",
   name: `Mehran Mahdavi`,
-  role: "Frontend Engineer",
+  role: "Senior Frontend Engineer",
   avatar: "/images/avatar.jpg",
   email: "mahdavi2it@gmail.com",
   location: "Asia/Yerevan", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -47,22 +47,22 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building fast, scalable, and user-friendly web applications</>,
+  title: `${person.name} | Senior Frontend Engineer`,
+  description: `Portfolio of ${person.name}, a Senior Frontend Engineer with 10+ years of experience in React, Next.js, and scalable architecture.`,
+  headline: <>Building fast, scalable, and user-focused web applications</>,
   featured: {
     display: true,
     title: (
       <>
-        Recent achievement: <strong className="ml-4">Micro-Frontend Architecture</strong>
+        Recent role: <strong className="ml-4">Team Lead at Forezynplan</strong>
       </>
     ),
-    href: "/work",
+    href: "/work/financial-forecasting-platform",
   },
   subline: (
     <>
       I'm Mehran, a Senior Frontend Engineer with 10+ years of experience crafting high-performance interfaces.
-      I specialize in React, Next.js, and scalable architecture.
+      I specialize in React, Angular, Micro-Frontends, and scalable architecture.
     </>
   ),
 };
@@ -70,8 +70,8 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: `About ${person.name} | Senior Frontend Engineer`,
+  description: `Learn more about ${person.name}, a Senior Frontend Engineer with a decade of experience in React, Angular, and Micro-Frontends.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -88,8 +88,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Mehran is a Yerevan-based Frontend Engineer with over a decade of experience creating fast, user-friendly applications. 
-        His work spans enterprise-grade platforms, scalable Micro-Frontend architectures, and the convergence of clean code with exceptional digital experiences.
+        Mehran is a Senior Frontend Engineer based in Yerevan, Armenia with over a decade of experience building fast, scalable, and user-focused web applications. 
+        He specializes in React, Next.js, and Angular, with expertise in Micro-Frontend and Monorepo architectures. 
+        From modern CRM platforms to cross-platform mobile apps, he focuses on performance, clean code, and mentoring engineering teams.
       </>
     ),
   },
@@ -100,14 +101,17 @@ const about: About = {
       {
         company: "Forezynplan",
         timeframe: "01/2026 - Present",
-        role: "Senior Frontend Engineer",
+        role: "Team Lead / Senior Frontend Engineer",
         achievements: [
           <>
-            Designed and built scalable Angular applications, reducing load times by 40% using lazy loading and NgRx.
+            Led the frontend effort on a professional Angular-based financial forecasting product.
+          </>,
+          <>
+            Improved load times by 40% using lazy loading and NgRx. Established testing standards with Jest.
           </>,
           <>
             Developed cross-platform mobile apps with React Native, achieving 95%+ code sharing between iOS and Android.
-          </>,
+          </>
         ],
         images: [],
       },
@@ -117,39 +121,45 @@ const about: About = {
         role: "Lead Frontend Engineer",
         achievements: [
           <>
-            Spearheaded migration from legacy Vue.js to React Micro-Frontends, and introduced Nx Monorepo architecture to reduce build times.
+            Built a large-scale CRM and advanced operator/admin panels designed for fast support workflows.
           </>,
           <>
-            Mentored the frontend team in adopting design systems and collaborated with backend engineers to optimize data flow.
-          </>,
-        ],
-        images: [],
-      },
-      {
-        company: "SQUAD",
-        timeframe: "12/2024 - 11/2025",
-        role: "Lead Frontend Engineer",
-        achievements: [
-          <>
-            Built enterprise-grade frontend from scratch using Next.js and React, achieving exceptional top Lighthouse scores via SSR/SSG.
+            Led the migration from legacy Vue.js to React Micro-Frontends, and introduced Nx Monorepo architecture to improve build times and code sharing.
           </>,
           <>
-            Managed and mentored a cross-functional team of 5 engineers, establishing frontend monitoring practices with Prometheus and Grafana.
-          </>,
+            Contributed to real-time data synchronization using WebSocket and collaborated closely with backend engineers to improve API performance.
+          </>
         ],
         images: [],
       },
       {
         company: "Staffingg",
         timeframe: "04/2023 - 08/2024",
-        role: "Software Developer",
+        role: "Software Developer / Fullstack Developer",
         achievements: [
           <>
-            Built full-stack features using React, Next.js, React Native, and Express.js, delivering cross-platform web and mobile solutions.
+            Worked as a fullstack developer across multiple client engagements in the US and Europe.
           </>,
           <>
-            Designed reusable component systems with TypeScript and Tailwind CSS, and implemented E2E testing achieving a 30% reduction in production issues.
+            Built full-stack features using React, Next.js, React Native, Express.js, and NestJS.
           </>,
+          <>
+            Implemented Cypress end-to-end testing, reducing production issues by 30%.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "Alibaba Travel",
+        timeframe: "Prior Experience",
+        role: "Frontend Team Lead",
+        achievements: [
+          <>
+            Led an 8-person frontend team in the train and bus product group for one of the largest travel companies in Iran.
+          </>,
+          <>
+            Helped deliver user experiences for more than 1 million users using Vue.js and React in a Micro-Frontend architecture.
+          </>
         ],
         images: [],
       },
@@ -183,10 +193,10 @@ const about: About = {
         images: [],
       },
       {
-        title: "Performance & Testing",
+        title: "Performance & Backend",
         description: (
           <>
-            Focused on Core Web Vitals, SSR, SSG, and lazy loading. Strong background in testing with Jest, Cypress, and React Testing Library.
+            Focused on Core Web Vitals, SSR/SSG, and end-to-end testing with Cypress. Practical backend experience with Node.js (NestJS, Express) and Python.
           </>
         ),
         images: [],
@@ -198,15 +208,15 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: `Blog | ${person.name}`,
+  description: `Articles and thoughts on frontend architecture, performance, and modern web development by ${person.name}.`,
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Development projects by ${person.name}`,
+  title: `Projects | ${person.name}`,
+  description: `Showcase of enterprise-grade applications, Micro-Frontends, and scalable architectures built by ${person.name}.`,
 };
 
 const gallery: Gallery = {
