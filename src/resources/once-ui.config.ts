@@ -187,16 +187,16 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "Mehran Mahdavi",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "mahdavi2it@gmail.com",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://www.threads.com/",
+  linkedin: "https://www.linkedin.com/",
+  discord: "https://discord.com/",
 };
 
 export {

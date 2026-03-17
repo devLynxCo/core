@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Logo } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Mehran",
+  lastName: "Mahdavi",
+  name: `Mehran Mahdavi`,
+  role: "Frontend Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "mahdavi2it@gmail.com",
+  location: "Asia/Yerevan", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Persian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -17,8 +17,8 @@ const newsletter: Newsletter = {
   title: <>Subscribe to {person.name}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the
-      intersection of creativity and engineering.
+      I occasionally write about frontend architecture, performance optimization, and the
+      intersection of clean code and exceptional user experience.
     </>
   ),
 };
@@ -29,17 +29,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/mahdavi2it",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/mehran-mahdavi",
   },
   {
     name: "Email",
@@ -54,25 +49,20 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building fast, scalable, and user-friendly web applications</>,
   featured: {
     display: true,
     title: (
       <>
-        Recent project: <strong className="ml-4">Once UI</strong>
+        Recent achievement: <strong className="ml-4">Micro-Frontend Architecture</strong>
       </>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Mehran, a Senior Frontend Engineer with 10+ years of experience crafting high-performance interfaces.
+      I specialize in React, Next.js, and scalable architecture.
     </>
   ),
 };
@@ -98,10 +88,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Mehran is a Yerevan-based Frontend Engineer with over a decade of experience creating fast, user-friendly applications. 
+        His work spans enterprise-grade platforms, scalable Micro-Frontend architectures, and the convergence of clean code with exceptional digital experiences.
       </>
     ),
   },
@@ -110,41 +98,57 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Forezynplan",
+        timeframe: "01/2026 - Present",
+        role: "Senior Frontend Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Designed and built scalable Angular applications, reducing load times by 40% using lazy loading and NgRx.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Developed cross-platform mobile apps with React Native, achieving 95%+ code sharing between iOS and Android.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "LicenseMarket",
+        timeframe: "04/2024 - 01/2026",
+        role: "Lead Frontend Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Spearheaded migration from legacy Vue.js to React Micro-Frontends, and introduced Nx Monorepo architecture to reduce build times.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Mentored the frontend team in adopting design systems and collaborated with backend engineers to optimize data flow.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "SQUAD",
+        timeframe: "12/2024 - 11/2025",
+        role: "Lead Frontend Engineer",
+        achievements: [
+          <>
+            Built enterprise-grade frontend from scratch using Next.js and React, achieving exceptional top Lighthouse scores via SSR/SSG.
+          </>,
+          <>
+            Managed and mentored a cross-functional team of 5 engineers, establishing frontend monitoring practices with Prometheus and Grafana.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Staffingg",
+        timeframe: "04/2023 - 08/2024",
+        role: "Software Developer",
+        achievements: [
+          <>
+            Built full-stack features using React, Next.js, React Native, and Express.js, delivering cross-platform web and mobile solutions.
+          </>,
+          <>
+            Designed reusable component systems with TypeScript and Tailwind CSS, and implemented E2E testing achieving a 30% reduction in production issues.
           </>,
         ],
         images: [],
@@ -156,12 +160,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Applied Science and Technology",
+        description: <>Bachelor's Degree in Software Development (2017).</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Coursera / Meta / IBM",
+        description: <>Certifications in Front-End Development, Machine Learning, and Deep Learning.</>,
       },
     ],
   },
@@ -170,40 +174,22 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend & Architecture",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Expert in React.js, Next.js, Angular, Vue.js, and React Native. Experienced in building Micro-Frontends, Nx Monorepos, and component-driven Design Systems.
+          </>
         ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Performance & Testing",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Focused on Core Web Vitals, SSR, SSG, and lazy loading. Strong background in testing with Jest, Cypress, and React Testing Library.
+          </>
         ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
@@ -214,17 +200,13 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Development projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
@@ -232,8 +214,6 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
