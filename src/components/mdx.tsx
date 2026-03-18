@@ -6,7 +6,7 @@ import {
   HeadingLink,
   Text,
   InlineCode,
-  CodeBlock,
+  CodeBlock as OnceCodeBlock,
   TextProps,
   MediaProps,
   Accordion,
@@ -122,6 +122,14 @@ function createInlineCode({ children }: { children: ReactNode }) {
   return <InlineCode>{children}</InlineCode>;
 }
 
+function SafeCodeBlock(props: any) {
+  const codes = Array.isArray(props?.codes) ? props.codes : [];
+  if (!codes.length) {
+    return null;
+  }
+  return <OnceCodeBlock {...props} codes={codes} />;
+}
+
 function createCodeBlock(props: any) {
   // For pre tags that contain code blocks
   if (props.children && props.children.props && props.children.props.className) {
@@ -132,7 +140,7 @@ function createCodeBlock(props: any) {
     const label = language.charAt(0).toUpperCase() + language.slice(1);
     
     return (
-      <CodeBlock
+      <OnceCodeBlock
         marginTop="8"
         marginBottom="16"
         codes={[
@@ -165,7 +173,7 @@ const components = {
   pre: createCodeBlock as any,
   Heading,
   Text,
-  CodeBlock,
+  CodeBlock: SafeCodeBlock as any,
   InlineCode,
   Accordion,
   AccordionGroup,
